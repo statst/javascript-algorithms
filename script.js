@@ -101,5 +101,27 @@ console.log(x);
 // x = x + 1;
 // x +=1;
 x++;
-
 console.log(x)
+
+//if/else statements
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus == 'married'){
+    console.log(firstName + ' is married');
+}else{
+    console.log(firstName + ' will hopefully marry soon:')
+}
+
+//Boolean Logic
+var firstName = 'John';
+var age=16;
+
+if(age<13){
+    console.log(firstName + ' is a boy.')
+} else if(age >= 13 && age < 20){ //Between 13 and 20
+    console.log(firstName + ' is a teenager.')
+}
+else{
+    console.log(firstName + ' is a man.')
+}

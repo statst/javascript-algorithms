@@ -10,15 +10,20 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
 */
 //Store Mark's and John's mass and height in variables
-var markHeight = 5;
-var johnHeight = 4;
-var markMass = 5;
-var johnMass = 4;
+var markHeight = 5;//ft
+var johnHeight = 4;//ft
+var markMass = 92;//kg
+var johnMass = 78;
 // Calculate both their BMIs
 
 var bmiMark = markMass / markHeight^2;
 var bmiJohn = johnMass / johnHeight^2;
-console.log(bmiMark, bmiJohn)
-var isTrue = bmiMark > bmiJohn
+if (markMass > johnMass){
+    console.log('Mark\' BMI is higher than John\'s.' )
+}else{
+    console.log("John' BMI is higher than Mark's.");
+}
+// console.log(bmiMark, bmiJohn)
+// var isTrue = bmiMark > bmiJohn
 
-console.log( "Is Mark's BMI higher than John's?" + ' ' + isTrue);
+// console.log( 'Is Mark\'s BMI higher than John\'s?' + ' ' + isTrue);
