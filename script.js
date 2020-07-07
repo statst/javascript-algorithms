@@ -287,3 +287,32 @@ console.log(john.indexOf(23));
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is a Not a designer': 'Jhn is a designer';
 console.log(isDesigner)
+
+//objects and properties
+//in arrays order matters a lot and in objects order doesen't matter at all
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.firstName);
+console.log(john['lastName']);
+var x ='birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+//new object syntax
+var jane = new Object();
+jane.name='Jane';
+jane.birthYear=1969;
+jane['lastName']='Smith';
+console.log(jane);
+
+

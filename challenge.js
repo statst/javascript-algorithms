@@ -113,4 +113,4 @@ var finalValues = [
 	bills[2] + tips[2],
 ];
 console.log(tips)
-console.log()
+console.log(finalValues)
