@@ -176,3 +176,25 @@ switch (true) {
     default:
         console.log(firstName + ' is a man.');
 }
+
+//truthy and falsy values and equality operators
+//falsy values: undefined, null, 0 '', NaN
+//truthy values: Not falsy values
+
+var height;
+
+height = 23;
+// height = '';
+
+if (height || height === 0){
+    console.log('variable is defined');   
+}else{
+    console.log('variable has not defined');
+}
+
+//Equality operators
+if (height == '23'){
+    console.log('The == operator does type coercion!')
+}
+
+//Functions
