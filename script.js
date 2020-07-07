@@ -243,3 +243,47 @@ var whatDoYouDo = function(job, firstName){
 console.log(whatDoYouDo('teacher', 'John'))
 console.log(whatDoYouDo('designer', 'Mark'));
 console.log(whatDoYouDo('retired', 'Mary'));
+
+//Arrays
+//initialize new array
+var names = ['John', ' Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names);
+
+console.log(names.length);
+
+console.log(names[0]);
+
+//mutate array data
+names[1] = 'Ben';
+console.log(names);
+
+// names[5] = 'Mary';
+// console.log(names);
+
+names[names.length] = 'Mary';
+console.log(names);
+
+//Different data types
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+//methods that adds elements to array
+//adds at the end
+john.push('blue');
+//adds at the start
+john.unshift('Mr');
+console.log(john);
+
+//remove last element
+john.pop();
+//removes first element
+john.shift();
+console.log(john);
+
+console.log(john.indexOf(1990));
+//if element is not in an array returns -1
+console.log(john.indexOf(23));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is a Not a designer': 'Jhn is a designer';
+console.log(isDesigner)
