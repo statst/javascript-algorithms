@@ -198,3 +198,25 @@ if (height == '23'){
 }
 
 //Functions
+
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+console.log(ageJohn, ageMike);
+
+function yearsUntilRetirement(year, firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if(retirement>0){
+        console.log(firstName + ' retires in ' + retirement + ' years');
+    }else{
+        console.log(firstName + ' is already retired. ');
+    }
+    
+}
+
+yearsUntilRetirement(1990, 'John');
+yearsUntilRetirement(1970, 'Mike');
+yearsUntilRetirement(1969, 'Mary');
