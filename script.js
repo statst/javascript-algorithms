@@ -380,3 +380,39 @@ for (var i =john.length - 1; i >= 0; i--){
     console.log(john[i]);
 }
 
+//advanced javascript: object and functions
+//primitives: numbers, strings, booleans, undefined, null
+//everything else is object: arrays, functions, dates, objects, wrapping of numbers, strings and booleans
+
+//function constructor
+
+var john = {
+    name: 'John',
+    yearOfBirth: 1989,
+    job: 'teacher'
+};
+
+var Person = function(name, yearOfBirth, job){
+    this.name = name;
+    this.yearOfBirth = yearOfBirth;
+    this.job = job;
+}
+
+Person.prototype.calculateAge = function () {
+	console.log(2016 - this.yearOfBirth);
+};
+
+Person.prototype.lastName = 'Smith';
+var john = new Person('John', 1990, 'teacher');
+
+john.calculateAge();
+
+var jane = new Person('Jane', 1978, 'designer');
+var mark = new Person('Mark', 1978, 'retired');
+
+jane.calculateAge();
+mark.calculateAge();
+
+console.log(john.lastName);
+console.log(jane.lastName);
+console.log(mark.lastName);
