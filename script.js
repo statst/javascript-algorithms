@@ -536,3 +536,24 @@ designerQuestion ('john');
 designerQuestion ('jane');
 
 interViewQuestion('teacher')('Mark');
+
+//immedietly invoked function expressions
+
+function game(){
+    var score = Math.random() + 18;
+    console.log(score >= 5);
+}
+
+game();
+
+(function game() {
+	var score = Math.random() + 18;
+	console.log(score >= 5);
+})();
+
+// console.log(score);
+
+(function game() {
+	var score = Math.random() + 18;
+	console.log(score >= 5 - goodluck);
+})(5);
