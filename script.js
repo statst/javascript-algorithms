@@ -511,3 +511,28 @@ function maxHeartReate(el){
 // console.log(ages);
 // console.log(fullAges);
 
+//functions returning functions
+
+function interViewQuestion(job){
+    if (job === 'designer'){
+        return function(name){
+            console.log(name + ', can you please explain what UX design is?')
+        }
+    } else if(job === 'teacher'){
+        return function(name){
+            console.log('What is subject do you teach, ' + name + '?')
+        }
+    } else {
+        return function(name){
+            console.log('Hello ' + name + ', what do yo you do?')
+        }
+    }
+}
+
+var teacherQuestion = interViewQuestion('teacher');
+var designerQuestion = interViewQuestion('designer');
+teacherQuestion ('john');
+designerQuestion ('john');
+designerQuestion ('jane');
+
+interViewQuestion('teacher')('Mark');
