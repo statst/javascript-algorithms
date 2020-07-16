@@ -1,10 +1,10 @@
-console.log("Hello World")
+// console.log("Hello World")
 
 //ES5
 //variables and data types
 //declare a variable
 var firstName= 'Jo';
-console.log(firstName);
+// console.log(firstName);
 
 //string
 var lastName = 'Shinde';
@@ -13,21 +13,21 @@ var lastName = 'Shinde';
 var age = 24;
 
 //boolean
-var myName = true;
-console.log(myName)
+// var myName = true;
+// console.log(myName)
 
-//undefined
-var myAge;
-console.log(myAge);
+// //undefined
+// var myAge;
+// console.log(myAge);
 
 //variable naming rules
 var _3years = 3;
 var jobTitle = "Software Developer"
 var $experience = 3;
 
-console.log(_3years);
-console.log(jobTitle);
-console.log($experience)
+// console.log(_3years);
+// console.log(jobTitle);
+// console.log($experience)
 
 //variable mutation and type coercion
 var firstName = 'Jo';
@@ -37,7 +37,7 @@ isWorking = true;
 
 //Js automatically convert var types as compared to other programming languages
 //Type Coercion
-console.log(firstName + ' ' + lastName + ' '+ age + '. Is she working? '+ isWorking);
+// console.log(firstName + ' ' + lastName + ' '+ age + '. Is she working? '+ isWorking);
 
 //variable mutation
 age = 'twienty five';
@@ -49,7 +49,7 @@ job = 'driver';
 
 // var lastName = prompt('what is her last Name?')
 
-console.log(firstName+ ' '+lastName)
+// console.log(firstName+ ' '+lastName)
 
 //basic operators
 var year, ageJo, ageJon;
@@ -60,19 +60,19 @@ ageJon = 28;
 var yearJo = year - 24;
 var yearJon = year - 28;
 
-console.log(yearJon);
-console.log(year + 2);
+// console.log(yearJon);
+// console.log(year + 2);
 
 //logical operators
-var jonOlder = ageJon > ageJo
-console.log(jonOlder)
+// var jonOlder = ageJon > ageJo
+// console.log(jonOlder)
 
-//typeof operator
-console.log(typeof jonOlder)
-console.log(typeof ageJon);
-console.log(typeof 'I am a software developer');
-var x;
-console.log(typeof x);
+// //typeof operator
+// console.log(typeof jonOlder)
+// console.log(typeof ageJon);
+// console.log(typeof 'I am a software developer');
+// var x;
+// console.log(typeof x);
 
 //operator precedence
 var now = 2020
@@ -80,28 +80,28 @@ var yearSteve = 1990
 var fullAge = 18;
 //multiple operators
 var isFullAge = now - yearSteve >= fullAge;
-console.log(fullAge)
+// console.log(fullAge)
 
-var ageJo = 24;
-var ageJon = 28;
-var average = (ageJo + ageJon) / 2;
-console.log(average)
+// var ageJo = 24;
+// var ageJon = 28;
+// var average = (ageJo + ageJon) / 2;
+// console.log(average)
 
 //multiple assignments
 var x, y;
 x = y = (3 + 5) * 4 -6;
 
-console.log(x, y);
+// console.log(x, y);
 
 //more operators
 x *= 2;
-console.log(x);
+// console.log(x);
 
 //increment
 // x = x + 1;
 // x +=1;
 x++;
-console.log(x)
+// console.log(x)
 
 //if/else statements
 var firstName = 'John';
@@ -117,14 +117,14 @@ if (civilStatus == 'married'){
 var firstName = 'John';
 var age=16;
 
-if(age<13){
-    console.log(firstName + ' is a boy.')
-} else if(age >= 13 && age < 20){ //Between 13 and 20
-    console.log(firstName + ' is a teenager.')
-}
-else{
-    console.log(firstName + ' is a man.')
-}
+// if(age<13){
+//     console.log(firstName + ' is a boy.')
+// } else if(age >= 13 && age < 20){ //Between 13 and 20
+//     console.log(firstName + ' is a teenager.')
+// }
+// else{
+//     console.log(firstName + ' is a man.')
+// }
 
 
 //ternary operator and switch statements
@@ -132,12 +132,12 @@ else{
 var firstName = 'John';
 var age = 16;
 
-age >= 18
-	? console.log(firstName + ' drinks beer.')
-    : console.log(firstName + ' drinks juice.'); 
+// age >= 18
+// 	? console.log(firstName + ' drinks beer.')
+//     : console.log(firstName + ' drinks juice.'); 
     
 var drink = age >= 18 ? 'beer' : 'juice';
-console.log(drink);
+// console.log(drink);
 
 // if(age>= 18){
 //     var drink = 'beer';
@@ -162,20 +162,20 @@ switch (job) {
         console.log(firstName + ' does something else. ');
 }
 
-age=10;
-switch (true) {
-	case age < 13:
-		console.log(firstName + ' is a boy');
-		break;
-	case age >= 13 && age < 20:
-		console.log(firstName + ' is a teenager.');
-		break;
-	case age >= 20 && age < 30:
-        console.log(firstName + ' is a young man.');
-        break;
-    default:
-        console.log(firstName + ' is a man.');
-}
+// age=10;
+// switch (true) {
+// 	case age < 13:
+// 		console.log(firstName + ' is a boy');
+// 		break;
+// 	case age >= 13 && age < 20:
+// 		console.log(firstName + ' is a teenager.');
+// 		break;
+// 	case age >= 20 && age < 30:
+//         console.log(firstName + ' is a young man.');
+//         break;
+//     default:
+//         console.log(firstName + ' is a man.');
+// }
 
 //truthy and falsy values and equality operators
 //falsy values: undefined, null, 0 '', NaN
@@ -204,7 +204,7 @@ function calculateAge(birthYear){
 }
 var ageJohn = calculateAge(1990);
 var ageMike = calculateAge(1948);
-console.log(ageJohn, ageMike);
+// console.log(ageJohn, ageMike);
 
 function yearsUntilRetirement(year, firstName){
     var age = calculateAge(year);
@@ -217,9 +217,9 @@ function yearsUntilRetirement(year, firstName){
     
 }
 
-yearsUntilRetirement(1990, 'John');
-yearsUntilRetirement(1970, 'Mike');
-yearsUntilRetirement(1969, 'Mary');
+// yearsUntilRetirement(1990, 'John');
+// yearsUntilRetirement(1970, 'Mike');
+// yearsUntilRetirement(1969, 'Mary');
 
 //function statements and expressions
 //function decoration
@@ -240,30 +240,30 @@ var whatDoYouDo = function(job, firstName){
     }
 }
 
-console.log(whatDoYouDo('teacher', 'John'))
-console.log(whatDoYouDo('designer', 'Mark'));
-console.log(whatDoYouDo('retired', 'Mary'));
+// console.log(whatDoYouDo('teacher', 'John'))
+// console.log(whatDoYouDo('designer', 'Mark'));
+// console.log(whatDoYouDo('retired', 'Mary'));
 
 //Arrays
 //initialize new array
 var names = ['John', ' Mark', 'Jane'];
 var years = new Array(1990, 1969, 1948);
 
-console.log(names);
+// console.log(names);
 
-console.log(names.length);
+// console.log(names.length);
 
-console.log(names[0]);
+// console.log(names[0]);
 
 //mutate array data
 names[1] = 'Ben';
-console.log(names);
+// console.log(names);
 
 // names[5] = 'Mary';
 // console.log(names);
 
 names[names.length] = 'Mary';
-console.log(names);
+// console.log(names);
 
 //Different data types
 var john = ['John', 'Smith', 1990, 'teacher', false];
@@ -273,20 +273,20 @@ var john = ['John', 'Smith', 1990, 'teacher', false];
 john.push('blue');
 //adds at the start
 john.unshift('Mr');
-console.log(john);
+// console.log(john);
 
 //remove last element
 john.pop();
 //removes first element
 john.shift();
-console.log(john);
+// console.log(john);
 
-console.log(john.indexOf(1990));
-//if element is not in an array returns -1
-console.log(john.indexOf(23));
+// console.log(john.indexOf(1990));
+// //if element is not in an array returns -1
+// console.log(john.indexOf(23));
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is a Not a designer': 'Jhn is a designer';
-console.log(isDesigner)
+// console.log(isDesigner)
 
 //objects and properties
 //in arrays order matters a lot and in objects order doesen't matter at all
@@ -299,21 +299,21 @@ var john = {
     isMarried: false
 };
 
-console.log(john.firstName);
-console.log(john['lastName']);
-var x ='birthYear';
-console.log(john[x]);
+// console.log(john.firstName);
+// console.log(john['lastName']);
+// var x ='birthYear';
+// console.log(john[x]);
 
 john.job = 'designer';
 john['isMarried'] = true;
-console.log(john);
+// console.log(john);
 
 //new object syntax
 var jane = new Object();
 jane.name='Jane';
 jane.birthYear=1969;
 jane['lastName']='Smith';
-console.log(jane);
+// console.log(jane);
 
 //objects and methods
 var john = {
@@ -332,7 +332,7 @@ var john = {
 // john.age = john.calcAge()
 // console.log(john.age)
 john.calcAge();
-console.log(john);
+// console.log(john);
 
 //loops and iteration
 
@@ -361,24 +361,24 @@ var john = ['John', 'Smith', 1990, 'teacher', false];
 
 //continue and break statements
 
-for (var i = 0; i < john.length; i++) {
-    if(typeof john[i] !== 'string'){
-        continue;
-    } 
-	console.log(john[i]);
-}
+// for (var i = 0; i < john.length; i++) {
+//     if(typeof john[i] !== 'string'){
+//         continue;
+//     } 
+// 	console.log(john[i]);
+// }
 
-for (var i = 0; i < john.length; i++) {
-	if (typeof john[i] !== 'string') {
-		break;
-	}
-	console.log(john[i]);
-}
+// for (var i = 0; i < john.length; i++) {
+// 	if (typeof john[i] !== 'string') {
+// 		break;
+// 	}
+// 	console.log(john[i]);
+// }
 
 //looping backwards
-for (var i =john.length - 1; i >= 0; i--){
-    console.log(john[i]);
-}
+// for (var i =john.length - 1; i >= 0; i--){
+//     console.log(john[i]);
+// }
 
 //advanced javascript: object and functions
 //primitives: numbers, strings, booleans, undefined, null
@@ -413,30 +413,30 @@ var mark = new Person('Mark', 1978, 'retired');
 jane.calculateAge();
 mark.calculateAge();
 
-console.log(john.lastName);
-console.log(jane.lastName);
-console.log(mark.lastName);
+// console.log(john.lastName);
+// console.log(jane.lastName);
+// console.log(mark.lastName);
 
 
 //object.create
-var personProto = {
-    calculateAge: function(){
-        console.log(2016 - this.yearOfBirth)
-    }
-};
+// var personProto = {
+//     calculateAge: function(){
+//         console.log(2016 - this.yearOfBirth)
+//     }
+// };
 
-var john = Object.create(personProto);
+// var john = Object.create(personProto);
 
-john.name = 'John'
-john.yearOfBirth = 1990;
-john.job= 'teacher'
+// john.name = 'John'
+// john.yearOfBirth = 1990;
+// john.job= 'teacher'
 
 
-var jane = Object.create(personProto, {
-    name: { value: 'Jane'},
-    yearOfBirth: { value: 1969},
-    job: {value: 'designer'}
-})
+// var jane = Object.create(personProto, {
+//     name: { value: 'Jane'},
+//     yearOfBirth: { value: 1969},
+//     job: {value: 'designer'}
+// })
 
 //primitives vs objects
 //when we pass a primitive into an object a simple copy is created, it will never affect a variable outside
@@ -445,8 +445,8 @@ var jane = Object.create(personProto, {
 var a = 23;
 var b = a;
 a = 46;
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
 
 var obj1 = {
     name: 'John',
@@ -455,8 +455,8 @@ var obj1 = {
 
 var obj2 = obj1;
 obj1.age = 30;
-console.log(obj1.age);
-console.log(obj2.age);
+// console.log(obj1.age);
+// console.log(obj2.age);
 
 //functions
 var age =27;
@@ -470,7 +470,44 @@ function change(a, b){
     b.city = 'San Francisco'
 }
 
-change(age, obj);
+// change(age, obj);
 
-console.log(age);
-console.log(obj.city);
+// console.log(age);
+// console.log(obj.city);
+
+//passing functions as argument
+
+var years = [1990, 1965, 1987, 1945];
+
+function arrayCalc(arr, fn){
+    var arrRes = [];
+    for (var i = 0; i< arr.length; i++ ){
+        arrRes.push(fn(arr[i]));
+    }
+    return arrRes;
+}
+
+function calculateAge(el){
+    return 2016 -el;
+}
+
+function isFullAge(el){
+    return el >= 18;
+
+}
+
+function maxHeartReate(el){
+    if (el >= 18 && el <= 81){
+        return Math.round(205.9 - 8.67 * el);
+    }else{
+        return -1;
+    }
+    
+}
+
+// var rates = arrayCalc(ages, maxHeartReate);
+// var ages = arrayCalc(years, calculateAge);
+// var fullAges = arrayCalc(ages, isFullAge)
+// console.log(ages);
+// console.log(fullAges);
+
