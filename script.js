@@ -679,6 +679,9 @@ primaryColors.reduce(function(previous, primaryColor){
 
 function balancedParens(string) {
     return !string.split("").reduce(function(previous, char){
+        if (previous < 0){
+            return previous
+        }
         if (char === "(" ){
             return ++previous
         }
