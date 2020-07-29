@@ -660,3 +660,34 @@ for (let i = 0; i < numbers.length; i++){
 numbers.reduce(function(sum, number) {
     return sum + number;
 }, 0)
+
+
+var primaryColors = [
+    { color: 'red' }, 
+    { color: 'yellow' },
+    { color: 'blue' }
+];
+
+//['red', 'yellow', 'blue']
+
+primaryColors.reduce(function(previous, primaryColor){
+    previous.push(primaryColor.color);
+
+    return previous;
+}, []);
+
+
+function balancedParens(string) {
+    return !string.split("").reduce(function(previous, char){
+        if (char === "(" ){
+            return ++previous
+        }
+        if(char == ")"){
+            return --previous
+        }
+        return previous;
+
+    }, 0)
+}
+
+console.log(balancedParens("(abcdefg(()"))
