@@ -107,11 +107,11 @@ x++;
 var firstName = 'John';
 var civilStatus = 'single';
 
-if (civilStatus == 'married'){
-    console.log(firstName + ' is married');
-}else{
-    console.log(firstName + ' will hopefully marry soon:')
-}
+// if (civilStatus == 'married'){
+//     console.log(firstName + ' is married');
+// }else{
+//     console.log(firstName + ' will hopefully marry soon:')
+// }
 
 //Boolean Logic
 var firstName = 'John';
@@ -146,21 +146,21 @@ var drink = age >= 18 ? 'beer' : 'juice';
 // }
 
 //switch statements
-var job = 'instructor';
-switch (job) {
-    case 'teacher':
-    case 'instructor':
-        console.log(firstName + ' teaches kids how to code. ');
-        break;
-    case 'driver':
-        console.log(firstName + ' drives an uber. ');
-        break;
-    case 'designer':
-        console.log(firstName + ' designs website. ');
-        break;
-    default:
-        console.log(firstName + ' does something else. ');
-}
+// var job = 'instructor';
+// switch (job) {
+//     case 'teacher':
+//     case 'instructor':
+//         console.log(firstName + ' teaches kids how to code. ');
+//         break;
+//     case 'driver':
+//         console.log(firstName + ' drives an uber. ');
+//         break;
+//     case 'designer':
+//         console.log(firstName + ' designs website. ');
+//         break;
+//     default:
+//         console.log(firstName + ' does something else. ');
+// }
 
 // age=10;
 // switch (true) {
@@ -181,41 +181,41 @@ switch (job) {
 //falsy values: undefined, null, 0 '', NaN
 //truthy values: Not falsy values
 
-var height;
+// var height;
 
-height = 23;
+// height = 23;
 // height = '';
 
-if (height || height === 0){
-    console.log('variable is defined');   
-}else{
-    console.log('variable has not defined');
-}
+// if (height || height === 0){
+//     console.log('variable is defined');   
+// }else{
+//     console.log('variable has not defined');
+// }
 
 //Equality operators
-if (height == '23'){
-    console.log('The == operator does type coercion!')
-}
+// if (height == '23'){
+//     console.log('The == operator does type coercion!')
+// }
 
 //Functions
 
-function calculateAge(birthYear){
-    return 2018 - birthYear;
-}
-var ageJohn = calculateAge(1990);
-var ageMike = calculateAge(1948);
+// function calculateAge(birthYear){
+//     return 2018 - birthYear;
+// }
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1948);
 // console.log(ageJohn, ageMike);
 
-function yearsUntilRetirement(year, firstName){
-    var age = calculateAge(year);
-    var retirement = 65 - age;
-    if(retirement>0){
-        console.log(firstName + ' retires in ' + retirement + ' years');
-    }else{
-        console.log(firstName + ' is already retired. ');
-    }
+// function yearsUntilRetirement(year, firstName){
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
+//     if(retirement>0){
+//         console.log(firstName + ' retires in ' + retirement + ' years');
+//     }else{
+//         console.log(firstName + ' is already retired. ');
+//     }
     
-}
+// }
 
 // yearsUntilRetirement(1990, 'John');
 // yearsUntilRetirement(1970, 'Mike');
@@ -285,53 +285,53 @@ john.shift();
 // //if element is not in an array returns -1
 // console.log(john.indexOf(23));
 
-var isDesigner = john.indexOf('designer') === -1 ? 'John is a Not a designer': 'Jhn is a designer';
+// var isDesigner = john.indexOf('designer') === -1 ? 'John is a Not a designer': 'Jhn is a designer';
 // console.log(isDesigner)
 
 //objects and properties
 //in arrays order matters a lot and in objects order doesen't matter at all
-var john = {
-    firstName: 'John',
-    lastName: 'Smith',
-    birthYear: 1990,
-    family: ['Jane', 'Mark', 'Bob', 'Emily'],
-    job: 'teacher',
-    isMarried: false
-};
+// var john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     birthYear: 1990,
+//     family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//     job: 'teacher',
+//     isMarried: false
+// };
 
 // console.log(john.firstName);
 // console.log(john['lastName']);
 // var x ='birthYear';
 // console.log(john[x]);
 
-john.job = 'designer';
-john['isMarried'] = true;
+// john.job = 'designer';
+// john['isMarried'] = true;
 // console.log(john);
 
 //new object syntax
-var jane = new Object();
-jane.name='Jane';
-jane.birthYear=1969;
-jane['lastName']='Smith';
+// var jane = new Object();
+// jane.name='Jane';
+// jane.birthYear=1969;
+// jane['lastName']='Smith';
 // console.log(jane);
 
 //objects and methods
-var john = {
-	firstName: 'John',
-	lastName: 'Smith',
-	birthYear: 1992,
-	family: ['Jane', 'Mark', 'Bob', 'Emily'],
-	job: 'teacher',
-    isMarried: false,
-    calcAge: function(){
-        this.age= 2018 - this.birthYear;
-    }
+// var john = {
+// 	firstName: 'John',
+// 	lastName: 'Smith',
+// 	birthYear: 1992,
+// 	family: ['Jane', 'Mark', 'Bob', 'Emily'],
+// 	job: 'teacher',
+//     isMarried: false,
+//     calcAge: function(){
+//         this.age= 2018 - this.birthYear;
+//     }
 
-};
+// };
 // console.log(john.calcAge(1990));
 // john.age = john.calcAge()
 // console.log(john.age)
-john.calcAge();
+// john.calcAge();
 // console.log(john);
 
 //loops and iteration
@@ -346,7 +346,7 @@ john.calcAge();
 //..
 // i = 10, 10 < 10 false, exit the loop!
 
-var john = ['John', 'Smith', 1990, 'teacher', false];
+// var john = ['John', 'Smith', 1990, 'teacher', false];
 //for loop
 // for (var i =0; i< john.length; i++){
 //     console.log(john[i]);
@@ -386,32 +386,32 @@ var john = ['John', 'Smith', 1990, 'teacher', false];
 
 //function constructor
 
-var john = {
-    name: 'John',
-    yearOfBirth: 1989,
-    job: 'teacher'
-};
+// var john = {
+//     name: 'John',
+//     yearOfBirth: 1989,
+//     job: 'teacher'
+// };
 
-var Person = function(name, yearOfBirth, job){
-    this.name = name;
-    this.yearOfBirth = yearOfBirth;
-    this.job = job;
-}
+// var Person = function(name, yearOfBirth, job){
+//     this.name = name;
+//     this.yearOfBirth = yearOfBirth;
+//     this.job = job;
+// }
 
-Person.prototype.calculateAge = function () {
-	console.log(2016 - this.yearOfBirth);
-};
+// Person.prototype.calculateAge = function () {
+// 	console.log(2016 - this.yearOfBirth);
+// };
 
-Person.prototype.lastName = 'Smith';
-var john = new Person('John', 1990, 'teacher');
+// Person.prototype.lastName = 'Smith';
+// var john = new Person('John', 1990, 'teacher');
 
-john.calculateAge();
+// john.calculateAge();
 
-var jane = new Person('Jane', 1978, 'designer');
-var mark = new Person('Mark', 1978, 'retired');
+// var jane = new Person('Jane', 1978, 'designer');
+// var mark = new Person('Mark', 1978, 'retired');
 
-jane.calculateAge();
-mark.calculateAge();
+// jane.calculateAge();
+// mark.calculateAge();
 
 // console.log(john.lastName);
 // console.log(jane.lastName);
@@ -442,33 +442,33 @@ mark.calculateAge();
 //when we pass a primitive into an object a simple copy is created, it will never affect a variable outside
 //when we change object inside of a function, it is still reflected outside of a function
 //primitives
-var a = 23;
-var b = a;
-a = 46;
+// var a = 23;
+// var b = a;
+// a = 46;
 // console.log(a);
 // console.log(b);
 
-var obj1 = {
-    name: 'John',
-    age: 26
-}
+// var obj1 = {
+//     name: 'John',
+//     age: 26
+// }
 
-var obj2 = obj1;
-obj1.age = 30;
+// var obj2 = obj1;
+// obj1.age = 30;
 // console.log(obj1.age);
 // console.log(obj2.age);
 
 //functions
-var age =27;
-var obj = {
-    name: 'Jonas',
-    city: 'Libson'
-}
+// var age =27;
+// var obj = {
+//     name: 'Jonas',
+//     city: 'Libson'
+// }
 
-function change(a, b){
-    a = 30;
-    b.city = 'San Francisco'
-}
+// function change(a, b){
+//     a = 30;
+//     b.city = 'San Francisco'
+// }
 
 // change(age, obj);
 
@@ -477,33 +477,33 @@ function change(a, b){
 
 //passing functions as argument
 
-var years = [1990, 1965, 1987, 1945];
+// var years = [1990, 1965, 1987, 1945];
 
-function arrayCalc(arr, fn){
-    var arrRes = [];
-    for (var i = 0; i< arr.length; i++ ){
-        arrRes.push(fn(arr[i]));
-    }
-    return arrRes;
-}
+// function arrayCalc(arr, fn){
+//     var arrRes = [];
+//     for (var i = 0; i< arr.length; i++ ){
+//         arrRes.push(fn(arr[i]));
+//     }
+//     return arrRes;
+// }
 
-function calculateAge(el){
-    return 2016 -el;
-}
+// function calculateAge(el){
+//     return 2016 -el;
+// }
 
-function isFullAge(el){
-    return el >= 18;
+// function isFullAge(el){
+//     return el >= 18;
 
-}
+// }
 
-function maxHeartReate(el){
-    if (el >= 18 && el <= 81){
-        return Math.round(205.9 - 8.67 * el);
-    }else{
-        return -1;
-    }
+// function maxHeartReate(el){
+//     if (el >= 18 && el <= 81){
+//         return Math.round(205.9 - 8.67 * el);
+//     }else{
+//         return -1;
+//     }
     
-}
+// }
 
 // var rates = arrayCalc(ages, maxHeartReate);
 // var ages = arrayCalc(years, calculateAge);
@@ -513,47 +513,150 @@ function maxHeartReate(el){
 
 //functions returning functions
 
-function interViewQuestion(job){
-    if (job === 'designer'){
-        return function(name){
-            console.log(name + ', can you please explain what UX design is?')
-        }
-    } else if(job === 'teacher'){
-        return function(name){
-            console.log('What is subject do you teach, ' + name + '?')
-        }
-    } else {
-        return function(name){
-            console.log('Hello ' + name + ', what do yo you do?')
-        }
-    }
-}
+// function interViewQuestion(job){
+//     if (job === 'designer'){
+//         return function(name){
+//             console.log(name + ', can you please explain what UX design is?')
+//         }
+//     } else if(job === 'teacher'){
+//         return function(name){
+//             console.log('What is subject do you teach, ' + name + '?')
+//         }
+//     } else {
+//         return function(name){
+//             console.log('Hello ' + name + ', what do yo you do?')
+//         }
+//     }
+// }
 
-var teacherQuestion = interViewQuestion('teacher');
-var designerQuestion = interViewQuestion('designer');
-teacherQuestion ('john');
-designerQuestion ('john');
-designerQuestion ('jane');
+// var teacherQuestion = interViewQuestion('teacher');
+// var designerQuestion = interViewQuestion('designer');
+// teacherQuestion ('john');
+// designerQuestion ('john');
+// designerQuestion ('jane');
 
-interViewQuestion('teacher')('Mark');
+// interViewQuestion('teacher')('Mark');
 
 //immedietly invoked function expressions
 
-function game(){
-    var score = Math.random() + 18;
-    console.log(score >= 5);
-}
+// function game(){
+//     var score = Math.random() + 18;
+//     console.log(score >= 5);
+// }
 
-game();
+// game();
 
-(function game() {
-	var score = Math.random() + 18;
-	console.log(score >= 5);
-})();
+// (function game() {
+// 	var score = Math.random() + 18;
+// 	console.log(score >= 5);
+// })();
 
 // console.log(score);
 
-(function game() {
-	var score = Math.random() + 18;
-	console.log(score >= 5 - goodluck);
-})(5);
+// (function game() {
+// 	var score = Math.random() + 18;
+// 	console.log(score >= 5 - goodluck);
+// })(5);
+
+
+//closures
+// function retirement(retirementAge){
+//     var a = ' years left until retirement '
+//     return function(yearOfBirth){
+//         var age = 2016 - yearOfBirth
+//         console.log((retirementAge - age) + a)
+//     }
+// }
+
+// var retirementUs = retirement(66);
+
+// retirementUs(1990);
+// retirement(66)(1990);
+
+
+// function solution(number){
+//     let sum=0;
+//     for(let i=0; i<number; i++){
+//         if (i%3 == 0 || i%5 == 0){
+//         return sum = sum + i;
+//         }
+//     }
+//     console.log(sum);
+// }
+
+// console.log(solution(3,5,6,9));
+
+
+// function solution(number){
+// var sum = 0;
+// for (i = 0; i < 1000; i++) {
+// 	if (i % 3 == 0 || i % 5 == 0) {
+// 		sum = sum + i;
+// 	}
+// }
+// return sum;
+// }
+
+// console.log(solution())
+
+// function list(names) {
+// 	let str = '';
+// 	if (names.length !== 0) {
+// 		let last = names.pop();
+// 		str = names
+// 			.map((val, i, arr) => {
+// 				if (i !== arr[arr.length - 1]) {
+// 					return val.name;
+// 				}
+// 			})
+// 			.join(', ');
+
+// 		str += str !== '' ? ' & ' + last.name : last.name;
+// 	}
+
+// 	return str;
+// }
+
+
+//Given the triangle of consecutive odd numbers:
+//Calculate the row sums of this triangle from the row index (starting at index 1) e.g.:
+
+//rowSumOddNumbers(1); // 1
+//rowSumOddNumbers(2); // 3 + 5 = 8
+// function rowSumOddNumbers(n) {
+// 	// TODO
+// 	return n ** 3;
+// }
+
+
+// Build Tower by the following given argument:
+// number of floors (integer and always greater than 0).
+// function towerBuilder(nFloors) {
+//   let arr=[];
+//   for(var i = 0; i< nFloors; i++){
+//    arr[i]="";
+//    for(var j = 0; j< nFloors-i-1; j++){
+//      array[i]+=" ";
+//    }
+//    for(var d=nFloors-i-1; d<nFloors+i; d++){
+//      arr[i]+="*";
+//    }
+//    for(var k=nFloors+i; k<2*nFloors-1; k++){
+//      arr[i]+=" ";
+//    }
+//   }
+//   return arr
+// }
+
+
+// reduce helper
+var numbers = [10, 20, 30];
+var sum = 0;
+
+for (let i = 0; i < numbers.length; i++){
+    sum += numbers[i];
+}
+
+numbers.reduce(function(sum, number) {
+    return sum + number;
+}, 0)
