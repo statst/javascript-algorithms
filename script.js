@@ -695,12 +695,37 @@ function balancedParens(string) {
 
 // console.log(balancedParens("(abcdefg(()"))
 
-var trips = [{ distance: 34 }, { distance: 12 }, { distance: 1 }];
+// var trips = [{ distance: 34 }, { distance: 12 }, { distance: 1 }];
 
-var totalDistance = trips.reduce(function(sum, trip){
+// var totalDistance = trips.reduce(function(sum, trip){
 
-    return sum + trip.distance;
-}, 0)
+//     return sum + trip.distance;
+// },0)
 
 
-console.log(totalDistance)
+// console.log(totalDistance)
+
+//Unsolved
+// var desks = [
+// 	{ type: 'sitting' },
+// 	{ type: 'standing' },
+// 	{ type: 'sitting' },
+// 	{ type: 'sitting' },
+// 	{ type: 'standing' },
+// ];
+
+// var deskTypes = desks.reduce(function (previous, desk) {
+
+// }, { sitting: 0, standing: 0 });
+
+// console.log(deskTypes);
+
+
+//Template String
+function getMessage(){
+    const year = new Date().getFullYear();
+    return `The year is ${year}`;
+}
+
+
+console.log(getMessage());
