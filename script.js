@@ -740,14 +740,30 @@ function balancedParens(string) {
 // You can not assume that the integer will be only positive. You may be given negative numbers as well (or 0).
 // NOTE on performance: There are no fancy optimizations required, but still the most trivial solutions might time out. Numbers go up to 2^31 (or similar, depends on language version). Looping all the way up to n, or n/2, will be too slow.
 
-function isPrime(num) {
-	if (num < 2) {
-		return false;
-	}
-	for (let i = 2; i < num / 2 + 1; i++) {
-		if (num % i === 0) {
-			return false;
-		}
-	}
-	return true;
-}
+// function isPrime(num) {
+// 	if (num < 2) {
+// 		return false;
+// 	}
+// 	for (let i = 2; i < num / 2 + 1; i++) {
+// 		if (num % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// }
+
+// function isPrime(num) {
+// 	if (n==1) {
+// 		return false;
+// 	}else if(n===2){
+//         return true
+//     }
+// 	for (let i = 2; i <= Math.sqrt(num); i += 2) {
+// 		if (num % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// }
+
+
