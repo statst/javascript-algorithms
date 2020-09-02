@@ -767,3 +767,110 @@ function balancedParens(string) {
 // }
 
 
+// challenge codewars
+
+// Find the longest substring in alphabetical order.
+
+// Example: the longest alphabetical substring in "asdfaaaabbbbcttavvfffffdf" is "aaaabbbbctt".
+
+// There are tests with strings up to 10 000 characters long so your code will need to be efficient.
+
+// The input will only consist of lowercase characters and will be at least one letter long.
+
+// If there are multiple solutions, return the one that appears first.
+
+// Good luck :)
+
+
+function longest(str) {
+	// Good luck :)
+	let ls = '',
+		length = 0,
+		initialStr = 0,
+		previous = str[0];
+	for (var i = 1; i <= str.length; ++i) {
+		if (i == str.length || str[i] < previous) {
+			if (length < i - initialStr) {
+				ls = str.substring(initialStr, i);
+				length = i - initialStr;
+			}
+			initialStr = i;
+		}
+		previous = str[i];
+	}
+	return ls;
+}
+
+//codewars problem Moving Zeros To The End
+// Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+// moveZeros([false,1,0,1,2,0,1,3,"a"]) /
+
+var moveZeros = function (arr) {
+	// TODO: Program me
+	for (let i = arr.length - 1; i >= 0; i--) {
+		if (arr[i] === 0) {
+			arr.splice(i, 1);
+			arr.push(0);
+		}
+	}
+	return arr;
+};
+
+
+
+// leetcode problem
+// Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+// Example:
+
+// Input: [0,1,0,3,12]
+// Output: [1,3,12,0,0]
+// Note:
+
+// You must do this in-place without making a copy of the array.
+// Minimize the total number of operations.
+// /**
+//  * @param {number[]} nums
+//  * @return {void} Do not return anything, modify nums in-place instead.
+//  */
+var moveZeroes = function(nums) {
+     let count = 0;  
+  for (let i = 0; i < nums.length; i++){
+    if (nums[i] != 0){
+      nums[count++] = nums[i];
+    }
+  }
+  while (count < nums.length){
+    nums[count++] = 0;
+  }
+    return nums;
+        
+    
+};
+
+// leetcode challenge power of four
+// Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+
+// Example 1:
+
+// Input: 16
+// Output: true
+// Example 2:
+
+// Input: 5
+// Output: false
+// Follow up: Could you solve it without loops/recursion?
+var isPowerOfFour = function(num) {
+     if (num <= 0) return false;
+        while (num % 4 == 0) {
+            num /= 4;
+        }
+        return num == 1;
+    
+};
+
+//solution without loop
+var isPowerOfFour = function (num) {
+	return num > 0 && (num & (num - 1)) == 0 && (num - 1) % 3 == 0;
+};
