@@ -1,0 +1,90 @@
+var colors = ['red', 'blue', 'green'];
+
+//print colors with index
+colors.forEach(function(color, i){
+    console.log(color, i)
+});
+
+//create an array of numbers
+let numbers = [1, 6,8,9,23]
+
+//create a variable to hold the sum
+let sum =0;
+
+//loop over the array, incrementing the sum variable
+numbers.forEach(function(num){
+    sum += num;
+})
+//print the sum variable
+console.log(sum);
+
+//read posts
+function handlePosts() {
+	var posts = [
+		{ id: 23, title: 'Daily JS News' },
+		{ id: 52, title: 'Code Refactor City' },
+		{ id: 105, title: 'The Brightest Ruby' },
+	];
+
+	posts.forEach(function (post) {
+		savePost(post);
+	});
+}
+
+//calculate the area of each image and store it in the new array
+var images = [
+	{ height: 10, width: 30 },
+	{ height: 20, width: 90 },
+	{ height: 54, width: 32 },
+];
+var areas = [];
+images.forEach(function (img) {
+	img = img.height * img.width;
+	areas.push(img);
+});
+
+console.log(areas);
+
+//Map Helper
+let doubled = numbers.map((x) =>{
+    return x * 2;
+})
+
+console.log(doubled)
+
+var cars = [
+	{ model: 'Buick', price: 'CHEAP' },
+	{ model: 'Camaro', price: 'expensive' },
+];
+
+let carPrices = cars.map((x)=>{
+    return x.price;
+})
+
+console.log(carPrices);
+
+//map problems
+var images = [
+	{ height: '34px', width: '39px' },
+	{ height: '54px', width: '19px' },
+	{ height: '83px', width: '75px' },
+];
+
+var heights = images.map(function (img) {
+	return img.height;
+});
+
+console.log(heights);
+
+//speed
+var trips = [
+	{ distance: 34, time: 10 },
+	{ distance: 90, time: 50 },
+	{ distance: 59, time: 25 },
+];
+
+var speeds = trips.map(function (trip) {
+	return trip.distance / trip.time;
+});
+
+console.log(speeds);
