@@ -1,22 +1,22 @@
 var colors = ['red', 'blue', 'green'];
 
 //print colors with index
-colors.forEach(function(color, i){
-    console.log(color, i)
-});
+// colors.forEach(function(color, i){
+//     console.log(color, i)
+// });
 
 //create an array of numbers
 let numbers = [1, 6,8,9,23]
 
 //create a variable to hold the sum
-let sum =0;
+let sum = 0;
 
 //loop over the array, incrementing the sum variable
 numbers.forEach(function(num){
     sum += num;
 })
 //print the sum variable
-console.log(sum);
+// console.log(sum);
 
 //read posts
 function handlePosts() {
@@ -43,14 +43,14 @@ images.forEach(function (img) {
 	areas.push(img);
 });
 
-console.log(areas);
+// console.log(areas);
 
 //Map Helper
 let doubled = numbers.map((x) =>{
     return x * 2;
 })
 
-console.log(doubled)
+// console.log(doubled)
 
 var cars = [
 	{ model: 'Buick', price: 'CHEAP' },
@@ -61,7 +61,7 @@ let carPrices = cars.map((x)=>{
     return x.price;
 })
 
-console.log(carPrices);
+// console.log(carPrices);
 
 //map problems
 var images = [
@@ -74,7 +74,7 @@ var heights = images.map(function (img) {
 	return img.height;
 });
 
-console.log(heights);
+// console.log(heights);
 
 //speed
 var trips = [
@@ -87,4 +87,57 @@ var speeds = trips.map(function (trip) {
 	return trip.distance / trip.time;
 });
 
-console.log(speeds);
+// console.log(speeds);
+
+
+let products = [
+	{ name: 'cucumber', type: 'vegetable', quantity: 0, price: 15 },
+	{ name: 'banana', type: 'fruit', quantity: 5, price: 25 },
+	{ name: 'orange', type: 'fruit', quantity: 6, price: 35 },
+	{ name: 'celery', type: 'vegetable', quantity: 9, price: 55 },
+];
+
+let filteredProducts = products.filter((x) => {
+	return x.type === 'fruit' && x.quantity > 5 && x.price < 55;
+})
+
+// console.log(filteredProducts);
+
+let post = { id:4, title: 'New Post'}
+
+let comments = [
+	{ postId: 4, content: 'awesome post' },
+	{ postId: 2, content: 'ok post' },
+	{ postId: 1, content: 'good post' },
+];
+
+function commentsForPost(post, comments){
+	return comments.filter((x) =>{
+		return x.postId === post.id;
+	})
+}
+
+console.log(commentsForPost(post, comments));
+
+//create new array that contains number greater than 50
+var number = [15, 25, 35, 45, 55, 65, 75, 85, 95];
+
+var filteredNumbers = number.filter(function (num) {
+	return num > 50;
+});
+
+// console.log(filteredNumbers);
+
+var users = [
+	{ id: 1, admin: true },
+	{ id: 2, admin: false },
+	{ id: 3, admin: false },
+	{ id: 4, admin: false },
+	{ id: 5, admin: true },
+];
+
+var filteredUsers = users.filter(function (user) {
+	return user.admin === true;
+});
+
+// console.log(filteredUsers);
