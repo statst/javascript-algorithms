@@ -249,21 +249,43 @@ let someName = names.some((name) => {
 
 // console.log(someName);
 
-//use case of every helper
-function Field(value) {
-	this.value = value
-}
+// //use case of every helper
+// function Field(value) {
+// 	this.value = value
+// }
 
-Field.prototype.validate = function ( ){
-	return this.value.length > 0;
-}
-let username = new Field("2cool");
-let password = new Field("my_password")
+// Field.prototype.validate = function ( ){
+// 	return this.value.length > 0;
+// }
+// let username = new Field("2cool");
+// let password = new Field("my_password")
 
-console.log(username.validate() &&password.validate());
+// console.log(username.validate() &&password.validate());
 
-var fields = [username, password]
-fields.every((field) => {
-	return fields.validate()
-})
+// var fields = [username, password]
+// fields.every((field) => {
+// 	return fields.validate
+// })
+
+//every coding challenge
+var users = [
+	{ id: 21, hasSubmitted: true },
+	{ id: 62, hasSubmitted: false },
+	{ id: 4, hasSubmitted: true },
+];
+
+var hasSubmitted = users.every(function (user) {
+	user.hasSubmitted = true;
+});
+
+//some coding challenge
+var requests = [
+	{ url: '/photos', status: 'complete' },
+	{ url: '/albums', status: 'pending' },
+	{ url: '/users', status: 'failed' },
+];
+
+var inProgress = requests.some(function (request) {
+	request.status === 'pending';
+});
 
