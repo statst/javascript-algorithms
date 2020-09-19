@@ -194,3 +194,76 @@ var account = accounts.find(function (account) {
 
 // console.log(account);
 
+
+//every and some helper
+
+var computers = [
+	{ name: 'Apple', ram: 24 },
+	{ name: 'Compaq', ram: 4 },
+	{ name: 'Acer', ram: 32 }
+];
+
+// let onlySomeComputersCanRunProgram = false;
+// let allComputersCanRunProgram = true;
+
+// for(let i=0; i< computers.length; i++){
+// 	let computer = computers[i];
+
+// 	if(computer.ram < 16){
+// 		allComputersCanRunProgram = false;
+// 	} else {
+// 		onlySomeComputersCanRunProgram = true;
+// 	}
+// }
+
+// console.log(allComputersCanRunProgram);
+// console.log(onlySomeComputersCanRunProgram);
+
+//using every helper
+
+let everyComputer = computers.every((computer) =>{
+	return computer.ram > 16;
+})
+
+
+// console.log(everyComputer);
+
+//somehelper
+
+let someComputer = computers.some((computer) => {
+	return computer.ram > 16
+})
+// console.log(someComputer);
+
+let names = [ "Alexandria", "Matthew", "Joe"];
+
+let everyName = names.every((name) => {
+	return name.length > 4;
+})
+
+// console.log(everyName);
+
+let someName = names.some((name) => {
+	return name.length > 4;
+});
+
+// console.log(someName);
+
+//use case of every helper
+function Field(value) {
+	this.value = value
+}
+
+Field.prototype.validate = function ( ){
+	return this.value.length > 0;
+}
+let username = new Field("2cool");
+let password = new Field("my_password")
+
+console.log(username.validate() &&password.validate());
+
+var fields = [username, password]
+fields.every((field) => {
+	return fields.validate()
+})
+
