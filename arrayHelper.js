@@ -103,21 +103,21 @@ let filteredProducts = products.filter((x) => {
 
 // console.log(filteredProducts);
 
-let post = { id:4, title: 'New Post'}
+// let post = { id:4, title: 'New Post'}
 
-let comments = [
-	{ postId: 4, content: 'awesome post' },
-	{ postId: 2, content: 'ok post' },
-	{ postId: 1, content: 'good post' },
-];
+// let comments = [
+// 	{ postId: 4, content: 'awesome post' },
+// 	{ postId: 2, content: 'ok post' },
+// 	{ postId: 1, content: 'good post' },
+// ];
 
-function commentsForPost(post, comments){
-	return comments.filter((x) =>{
-		return x.postId === post.id;
-	})
-}
+// function commentsForPost(post, comments){
+// 	return comments.filter((x) =>{
+// 		return x.postId === post.id;
+// 	})
+// }
 
-console.log(commentsForPost(post, comments));
+// console.log(commentsForPost(post, comments));
 
 //create new array that contains number greater than 50
 var number = [15, 25, 35, 45, 55, 65, 75, 85, 95];
@@ -136,8 +136,61 @@ var users = [
 	{ id: 5, admin: true },
 ];
 
-var filteredUsers = users.filter(function (user) {
+// var filteredUsers = users.filter(function (user) {
+// 	return user.admin === true;
+// });
+
+// console.log(filteredUsers);
+
+//find helper
+let user = [{ name: 'Jill' }, { name: 'Alex' }, { name: 'Bill' }];
+
+
+// for (let i=0; i<user.length; i++){
+// 	if(user[i].name === 'Alex'){
+// 		users = user[i];
+// 		break
+// 	}
+// }
+// console.log(users);
+
+let userFind= user.find((user) =>{
+	return user.name === 'Alex';
+})
+// console.log(userFind);
+
+let posts = [
+	{id:1, title: 'New Post'},
+	{id:2, title: 'Old Post'}
+];
+
+let comment = {postId: 1, content: 'Great Post'}
+
+function postForComment(posts, comment){
+	return posts.find((x) =>{
+		return x.id === comment.postId;
+	})
+}
+
+// console.log(postForComment(posts, comment));
+
+var users = [
+	{ id: 1, admin: false },
+	{ id: 2, admin: false },
+	{ id: 3, admin: true },
+];
+
+var admin = users.find(function (user) {
 	return user.admin === true;
 });
 
-// console.log(filteredUsers);
+// console.log(admin);
+
+var accounts = [{ balance: -10 }, { balance: 12 }, { balance: 0 }];
+
+var account = accounts.find(function (account) {
+	return account.balance === 12;
+});
+
+// console.log(account);
+
