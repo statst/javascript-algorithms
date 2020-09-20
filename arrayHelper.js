@@ -378,3 +378,24 @@ function unique(array) {
 let array = [1,1,2,3,4,4];
 
 console.log(unique(array));
+
+//template strings
+function getMessage(){
+	const year = new Date().getFullYear();
+
+	return "The year is " + year;
+}
+
+console.log(getMessage());
+
+
+//default function argument
+
+function makeAjaxRequest(url, method = 'GET'){
+	if(!method){
+		method = 'GET'
+	}
+	//logic to make the request
+}
+
+makeAjaxRequest('google.com', 'POST');
