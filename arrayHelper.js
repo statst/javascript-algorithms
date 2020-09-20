@@ -154,9 +154,9 @@ let user = [{ name: 'Jill' }, { name: 'Alex' }, { name: 'Bill' }];
 // }
 // console.log(users);
 
-let userFind= user.find((user) =>{
-	return user.name === 'Alex';
-})
+// let userFind= user.find((user) =>{
+// 	return user.name === 'Alex';
+// })
 // console.log(userFind);
 
 let posts = [
@@ -289,3 +289,75 @@ var inProgress = requests.some(function (request) {
 	request.status === 'pending';
 });
 
+//Reduce helper
+let num = [10, 20, 30];
+
+	let s = 0;
+for(let i=0; i< num.length; i++){
+	s += num[i];
+}
+
+// console.log(s);
+
+let sumNum = num.reduce((sum, number) =>{
+	return sum + number;
+}, 0)
+
+// console.log(sumNum);
+
+let primaryColors = [{ color: 'red' }, { color: 'yellow' }, { color: 'blue' }];
+
+//return array of strings of color
+let color = primaryColors.reduce((previous, primaryColor) => {
+	previous.push(primaryColor.color);
+	return previous;
+}, [])
+
+console.log(color);
+
+function balancedParens(string){
+	return !string.split("").reduce((previous, char) =>{
+		if(previous < 0) {
+			return previous;
+		}
+		if(char === "(") {
+			return ++previous;
+		}
+		if( char === ")"){
+			return --previous;
+		}
+		return previous;
+	}, 0);
+}
+
+console.log(balancedParens("((((()))))"));
+console.log(balancedParens(')('));
+
+//calculate some of all distance travelled
+var trips = [{ distance: 34 }, { distance: 12 }, { distance: 1 }];
+
+var totalDistance = trips.reduce(function (sum, trip) {
+	return sum + trip.distance;
+}, 0);
+
+console.log(totalDistance);
+
+
+var desks = [
+	{ type: 'sitting' },
+	{ type: 'standing' },
+	{ type: 'sitting' },
+	{ type: 'sitting' },
+	{ type: 'standing' },
+];
+
+let deskTypes = desks.reduce(
+	function (accumulator, desk) {
+		accumulator[Object.values(desk)]++;
+
+		return accumulator;
+	},
+	{ sitting: 0, standing: 0 }
+);
+
+console.log(deskTypes);
