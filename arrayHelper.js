@@ -352,12 +352,29 @@ var desks = [
 ];
 
 let deskTypes = desks.reduce(
-	function (accumulator, desk) {
-		accumulator[Object.values(desk)]++;
-
-		return accumulator;
-	},
-	{ sitting: 0, standing: 0 }
+function (accumulator, desk) {
+	accumulator[Object.values(desk)]++;
+	return accumulator;
+},
+{ sitting: 0, standing: 0 }
 );
 
 console.log(deskTypes);
+
+//write a function that will remove all duplicate values from an array
+function unique(array) {
+	return array.reduce(function (previous, current) {
+		if (
+			!previous.find(function (prevItem) {
+				return prevItem === current;
+			})
+		) {
+			previous.push(current);
+		}
+		return previous;
+	}, []);
+}
+
+let array = [1,1,2,3,4,4];
+
+console.log(unique(array));
