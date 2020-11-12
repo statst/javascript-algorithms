@@ -22,3 +22,4 @@ function checkMagazine(magazine, note) {
 	}
 	console.log(result);
 }
+
