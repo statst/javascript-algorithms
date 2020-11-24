@@ -16,3 +16,5 @@ console.log("Second Object", obj2)
 Object.freeze(obj2)
 obj2.review = "Jo"
 console.log('second un-mutated object', obj2);
+
+
