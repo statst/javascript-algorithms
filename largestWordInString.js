@@ -1,3 +1,8 @@
+//Return the length of the longest word in the provided sentence.
+
+// Your response should be a number.music app
+
+
 function findLongestWordLength(str) {
 let largest=0
 let str1 = str.split(' ');
